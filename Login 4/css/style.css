@@ -1,0 +1,124 @@
+
+
+/* Design reference: https://dribbble.com/shots/11879454-Sign-Up-Form */
+
+/* basic */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font: 16px/1.2 "Roboto", sans-serif;
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* ui_btn */
+.ui_btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.b_lg {
+  padding: 8px;
+  font-size: 14px;
+}
+.b_primary {
+  border: 1px solid #333;
+}
+
+/* formfield */
+input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #eee;
+}
+input[type="text"] {
+  width: 100%;
+}
+input[type="checkbox"] {
+  margin: 0;
+}
+input[type="checkbox"] + span {
+  font-size: 12px;
+}
+
+/* container */
+.container {
+  display: flex;
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* signup_form */
+.signup_form {
+  width: 340px;
+  padding: 36px;
+}
+.signup_form .header {
+  color: pink;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.signup_form .content {
+  margin-bottom: 16px;
+}
+.signup_form .content p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.signup_form .content .login_type {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.signup_form .content .login_type li {
+  margin: 0 8px;
+}
+.signup_form .content .login_box li + li {
+  margin-top: 8px;
+}
+
+.signup_form .footer .bar_tool {
+  font-size: 0;
+}
+.signup_form .footer .bar_tool li {
+  display: inline-block;
+  width: calc(50% - 4px);
+}
+.signup_form .footer .bar_tool li + li {
+  margin-left: 8px;
+}
+
+/* figure */
+figure {
+  width: 260px;
+}
+

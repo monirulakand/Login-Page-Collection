@@ -1,0 +1,155 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top center, #FAFAFA, #E1F5FE);
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 550px;
+  width: 350px;
+  margin-top: 3rem;
+  background: white;
+  box-shadow: 0px 3px 20px rgba(0,0,0, .05);
+}
+
+.header-lock-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin: -36px auto 0;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0,0,0, .2);
+}
+
+.social-signup {
+  width: 80%;
+  text-align: center;
+}
+.social-signup h2 {
+  font-size: 0.875em;
+  font-weight: 300; 
+}
+.social-signup__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.social-signup__buttons .sn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.3rem;
+  height: 1.9rem;
+  border: 2px solid #424242;
+  border-radius: 0.25rem;
+  fill: #424242;
+  transition: all .2s ease;
+}
+.social-signup__buttons .sn-icon:hover {
+  border-color: #00E676;
+  fill: #00E676;
+}
+
+.or-divider {
+  position: relative;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16rem;
+}
+.or-divider:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+}
+.or-divider__text {
+  position: relative;
+  z-index: 2;
+  width: 2.25rem;
+  height: 2.25rem;
+  font: italic 300 0.8rem/2.25rem "Open Sans";
+  text-align: center;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 0 .6rem white;
+}
+
+/* LOGIN FORM */
+
+.login-form {
+  width: 18.18rem;
+}
+.login-form input {
+  box-sizing: border-box;
+  width: 18.18rem;
+  height: 2.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 0.25rem;
+  padding-left: 2.5rem;
+}
+.login-form input::placeholder {
+  font: italic 300 0.75rem/2.25rem "Open Sans";
+  color: black;
+  opacity: .2;
+}
+.login-form__email-field,
+.login-form__password-field {
+  position: relative;
+}
+.login-form__email-field__icon {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  fill: black;
+  opacity: .54;
+}
+.login-form__password-field__icon {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  fill: black;
+  opacity: .54;
+}
+.login-form button[type=submit] {
+  width: 18.18rem;
+  height: 2.375rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #00E676;
+  font: 300 1em "Open Sans";
+  color: white;
+  transition: background .2s ease;
+}
+.login-form button[type=submit]:hover {
+  background: #5CF19E;
+  cursor: pointer;
+}
+
+.bottom-link { margin-top: 1em; }
+.bottom-link a {
+  font: 0.75rem "Open Sans";
+  text-decoration: none;
+  color: black;
+  opacity: .54;
+  transition: opacity .2s ease;
+}
+.bottom-link a:hover {
+  opacity: .87;
+}
